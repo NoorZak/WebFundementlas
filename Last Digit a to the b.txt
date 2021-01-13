@@ -1,0 +1,33 @@
+// Group(Noor aldeen Zakarneh ,Mohammad Husseini ,Mohammad Donbok)
+
+function p (x,n){
+  var f =1;
+  for (var i=1;i<=n;i++)
+    f*=x;
+  
+  return f;
+  
+}
+
+function least(n){
+  
+ return n%10;
+  
+  
+}
+
+function lastDigitAtoB(a,b){
+  
+  return least(p(a,b));
+  
+  
+  
+}
+
+
+  
+console.log(lastDigitAtoB(2,5));
+  
+  
+  
+ 

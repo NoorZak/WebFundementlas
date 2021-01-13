@@ -1,0 +1,221 @@
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+.container{
+    
+    width: 1020px;
+    background-color: #eeeeee;
+    padding-right: 30px;
+    padding-left: 10px;
+ }
+.first{
+
+    width: 100%;
+    outline-color: black  ;
+    height: 50px;
+
+
+display: flex;
+justify-content: space-between;
+vertical-align: center;
+
+}
+
+.num{
+    display: flex;
+  min-width:50px;
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #eeeeee;
+    margin: 2px;
+}
+
+.num h6
+{
+
+    width: 100%; ;
+     text-align: center; 
+ margin: 0;
+ padding:0;
+}
+
+
+.num div
+{   
+    color: #242db4;
+    font-size :20px;
+    background-color: white;
+width: 100%;
+text-align: center;
+}
+
+.num p
+{
+    
+    margin: 0;
+text-align:center;
+font-size: 10px;
+}
+
+
+.space{
+
+    margin-left: 10px;
+}
+
+.space2{
+
+    margin-bottom: 10px;
+    
+}
+
+
+
+.blue{
+
+
+    background-color: #689bff;
+}
+
+
+.num:nth-child(2) h1 {
+    background: #689bff;
+  }
+  .num:nth-child(3) h1 {
+    background: #689bff;
+  }
+
+
+  
+  .num:nth-child(4) h1 {
+    background: #fd9a98;
+  }
+
+  
+  .num:nth-child(5) h1 {
+    background: #fd9a98;
+  }
+
+
+  
+  .num:nth-child(6) h1 {
+    background: #fd9a98;
+  }
+
+  
+  .num:nth-child(7) h1 {
+    background: #fd9a98;
+  }
+
+  
+  .num:nth-child(8) h1 {
+    background: #fd9a98;
+  }
+
+
+
+  .num:nth-child(9) h1 {
+    background: #fd9a98;
+  }
+
+
+
+  .num:nth-child(10) h1 {
+    background: #fd9a98;
+  }
+
+
+  .num:nth-child(11) h1 {
+    background: #fd9a98;
+  }
+
+  .num:nth-child(12) h1 {
+    background: #fd9a98;
+  }
+
+
+  .num:nth-child(13) h1 {
+    background: #fd9a98;
+  }
+
+
+  
+  .num:nth-child(14) h1 {
+    background:  #fecb00
+    ;
+  }
+
+  .num:nth-child(15) h1 {
+    background:   #fecb00
+    ;
+  }
+
+  .num:nth-child(16) h1 {
+    background:   #fecb00
+    ;
+  }
+
+  .num:nth-child(17) h1 {
+    background:   #fecb00
+    ;
+  }
+
+
+
+  .num:nth-child(18) h1 {
+    background:   #fecb00
+    ;
+  }
+
+  
+  
+  .num:nth-child(19) h1 {
+    background:   #fecb00
+    ;
+  }
+
+  .green:nth-child(2){
+    font-size: 11px
+
+
+
+  }
+
+  .green h1{
+    
+    background-color: green !important;
+    
+    
+}
+
+
+.Lanthandois{
+color: red;
+font-size: 10.5px;
+
+
+}
+
+
+/*
+
+.space3{
+margin-left: 50px;
+
+
+
+}*/
+
+
+.starr h6{
+    text-align: right;
+    font-size: 12px;
+margin-left: 5px;
+
+}

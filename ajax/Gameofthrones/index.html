@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    
+    
+
+
+
+
+    
+ 
+        $(document).ready(function(){
+
+
+            
+            
+            $("img").attr("height", "100%")
+
+            $("img").attr("width", "20%")
+            
+            $('img').click(function(){
+                
+                $.get(`https://anapioficeandfire.com/api/houses/${$(this).attr('id')}`, function(res) {
+                    
+                    var html_str = "";
+                    html_str += "<fieldset><legend>Houses</legend><ul>"; 
+                     for (var key in res){
+                        html_str += "<li> "+key+":" + res[key] + "</li>";
+                        console.log(res[key]);
+                     }
+                     html_str += "</ul></fieldset>";
+                     $(".container").html(html_str);
+
+                    },"json")
+
+
+
+
+
+            })
+
+        
+
+        });
+        
+        </script>
+    
+</head>
+
+
+<body>
+
+    <img src='baratheon.png' id ='17'>
+    <img src='lannister.jpg' id ='25' >
+    <img src='stark.jpg' id ='23' >
+    <img src='targaryen.jpg' id ='20' >
+    <div class="container">
+
+    </div>
+
+   
+</body>
+
+
+</html>

@@ -1,0 +1,7 @@
+INSERT INTO tweets  (tweet,user_id,created_at,updated_at)
+VALUES("Hello", 1,Now(),Now());
+
+Update tweets set tweet = "hello1" where id =13;
+
+delete from tweets where id =12;
+select * from tweets

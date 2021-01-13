@@ -1,0 +1,568 @@
+Welcome! If you are new to the game, here are some tips: 
+ 
+Look at your surroundings with the command "ls". 
+Move to a new location with the command "cd LOCATION" 
+You can backtrack with the command "cd ..". 
+Interact with things in the world with the command "less ITEM" 
+ 
+If you forget where you are, type "pwd" 
+ 
+Go ahead, explore. We hope you enjoy what you find. Do ls as your first command.
+ 
+>ls
+ Locations: 
+
+ Items: 
+WaryEyeOfGradStudent
+HelpfulTA
+>
+Command '' not found in room 'StataCenter'
+>
+Command '' not found in room 'StataCenter'
+>
+Command '' not found in room 'StataCenter'
+>c..
+Command 'c..' not found in room 'StataCenter'
+>cd ..
+You have moved to MIT. You have arrived by magic carpet to MIT!
+>ls
+ Locations: 
+StataCenter
+AthenaCluster
+ Items: 
+AdmissionLetter
+>cd ..
+You have moved to Home. You are in the comfort of your own home.
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd ..
+You are at the first room.
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd ..
+You are at the first room.
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>
+Command '' not found in room 'Home'
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd ..
+You are at the first room.
+>
+Command '' not found in room 'Home'
+>
+Command '' not found in room 'Home'
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>less WelcomeLetter
+Welcome! If you are new to the game, here are some tips: 
+ 
+Look at your surroundings with the command "ls". 
+Move to a new location with the command "cd LOCATION" 
+You can backtrack with the command "cd ..". 
+Interact with things in the world with the command "less ITEM" 
+ 
+If you forget where you are, type "pwd" 
+ 
+Go ahead, explore. We hope you enjoy what you find. Do ls as your first command.
+ 
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd WesternForest 
+You can't move to multiple locations.
+>cd WesternForest 
+You can't move to multiple locations.
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd WesternForest
+You have moved to WesternForest. You enter and travel deep into the forest. Eventually, the path leads to a 
+clearing with a large impressive building. A sign on it reads: Spell Casting Academy: The Elite School of 
+Magic. 
+>ls
+ Locations: 
+SpellCastingAcademy
+ Items: 
+Sign
+BackSign
+>less sign 
+There is no sign here.
+>less BackSign 
+If you ever want to go directly Home, just type 'cd ~' or just plain old `cd' and you'll come back Home. 
+Getting back might be more difficult though. 
+>cd SpellCastingAcademy
+You have moved to SpellCastingAcademy. The halls are filled the hustle and bustle of academy students 
+scurrying to and from classes. The inside of the academy is as impressive as it is on the outside with a high 
+ceiling and gothic arches, it seems even larger on the inside. 
+>ls
+ Locations: 
+PracticeRoom
+Lessons
+ Items: 
+HurryingStudent
+>less HurryingStudent
+You to speak to a hurrying student. The student runs into you and falls to the ground. The student quickly 
+gets up and apologizes to you, asking if you are okay. You are sturdier than you look and you're undamaged. 
+I'm so sorry, I was in such a hurry that I didn't see you there... Say, I haven't seen you here before. 
+You're new here aren't-cha?" the student winks at you, "Don't worry, there's tons of newbies around today, 
+why don't you try checking out one of the free intro lessons? I'd show you where to go, but I gotta run to 
+class. Just head into the Lessons hall and someone should help you out. See you around." The student runs 
+past you. You notice that the student is pretty cute, and probably around your age. Unfortunately, the 
+student disappears around a corner before you can ask for a name. 
+>ls
+ Locations: 
+PracticeRoom
+Lessons
+ Items: 
+HurryingStudent
+>cd PracticeRoom
+You have moved to PracticeRoom. The room is filled with practice dummies for students to practice their new 
+spells on. 
+>ls
+ Locations: 
+Box
+ Items: 
+Instructions
+PracticeDummy1
+PracticeDummy2
+PracticeDummy3
+PracticeDummy4
+PracticeDummy5
+>less PracticeDummy1
+It's a practice dummy
+>cd ..
+You have moved to SpellCastingAcademy. The halls are filled the hustle and bustle of academy students 
+scurrying to and from classes. The inside of the academy is as impressive as it is on the outside with a high 
+ceiling and gothic arches, it seems even larger on the inside. 
+>less PracticeDummy2
+There is no PracticeDummy2 here.
+>less PracticeDummy3
+There is no PracticeDummy3 here.
+>pwd
+You are in SpellCastingAcademy.
+>ls
+ Locations: 
+PracticeRoom
+Lessons
+ Items: 
+HurryingStudent
+>less HurryingStudent
+You to speak to a hurrying student. The student runs into you and falls to the ground. The student quickly 
+gets up and apologizes to you, asking if you are okay. You are sturdier than you look and you're undamaged. 
+I'm so sorry, I was in such a hurry that I didn't see you there... Say, I haven't seen you here before. 
+You're new here aren't-cha?" the student winks at you, "Don't worry, there's tons of newbies around today, 
+why don't you try checking out one of the free intro lessons? I'd show you where to go, but I gotta run to 
+class. Just head into the Lessons hall and someone should help you out. See you around." The student runs 
+past you. You notice that the student is pretty cute, and probably around your age. Unfortunately, the 
+student disappears around a corner before you can ask for a name. 
+>cd PracticeRoom
+You have moved to PracticeRoom. The room is filled with practice dummies for students to practice their new 
+spells on. 
+>ls
+ Locations: 
+Box
+ Items: 
+Instructions
+PracticeDummy1
+PracticeDummy2
+PracticeDummy3
+PracticeDummy4
+PracticeDummy5
+>less PracticeDummy1
+It's a practice dummy
+>less PracticeDummy2
+It's a practice dummy
+>less PracticeDummy3
+It's a practice dummy
+>less PracticeDummy4
+It's a practice dummy
+>less PracticeDummy5
+It's a practice dummy
+>ls 
+That is not a valid object to look at.
+>cd ..
+You have moved to SpellCastingAcademy. The halls are filled the hustle and bustle of academy students 
+scurrying to and from classes. The inside of the academy is as impressive as it is on the outside with a high 
+ceiling and gothic arches, it seems even larger on the inside. 
+>ls
+ Locations: 
+PracticeRoom
+Lessons
+ Items: 
+HurryingStudent
+>cd PracticeRoom
+You have moved to PracticeRoom. The room is filled with practice dummies for students to practice their new 
+spells on. 
+>ls
+ Locations: 
+Box
+ Items: 
+Instructions
+PracticeDummy1
+PracticeDummy2
+PracticeDummy3
+PracticeDummy4
+PracticeDummy5
+>cd ..
+You have moved to SpellCastingAcademy. The halls are filled the hustle and bustle of academy students 
+scurrying to and from classes. The inside of the academy is as impressive as it is on the outside with a high 
+ceiling and gothic arches, it seems even larger on the inside. 
+>ls
+ Locations: 
+PracticeRoom
+Lessons
+ Items: 
+HurryingStudent
+>cd ..
+You have moved to WesternForest. You enter and travel deep into the forest. Eventually, the path leads to a 
+clearing with a large impressive building. A sign on it reads: Spell Casting Academy: The Elite School of 
+Magic. 
+>ls
+ Locations: 
+SpellCastingAcademy
+ Items: 
+Sign
+BackSign
+>cd ..
+You have moved to Home. You are in the comfort of your own home.
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd NortherMeadow
+There is no room called NortherMeadow.
+>cd NorthernMeadow
+You have moved to NorthernMeadow. This is a beautiful green meadow. A plump but majestic pony prances happily 
+about. 
+>ls
+ Locations: 
+EasternMountains
+ Items: 
+Pony
+>less pony
+There is no pony here.
+>less Pony
+You go up to the pony and attempt to ride it. It compiles and you ride the pony around in circles for a bit. 
+It then grows tired of having you as a burden and knocks you off. He then looks towards the east as if 
+suggesting that you head in that direction. 
+>cd ..
+You have moved to Home. You are in the comfort of your own home.
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd NorthernMeadow
+You have moved to NorthernMeadow. This is a beautiful green meadow. A plump but majestic pony prances happily 
+about. 
+>ls
+ Locations: 
+EasternMountains
+ Items: 
+Pony
+>cd EasternMountains
+You have moved to EasternMountains. You travel through a mountain path, which eventually leads you to the 
+entrance of a cave. Sitting right outside this cave is an old man. 
+>ls
+ Locations: 
+Cave
+ Items: 
+OldMan
+OldManuscripts
+>less OldMan
+You speak with the old man. He greets you warmly as if you were old friends. You feel at ease with him. 
+"Hello adventurer! Top of the morning to you! You seem like a young and energetic explorer. If you're brave 
+enough, your destiny awaits within this cave. That destiny will manifest itself as a portal. Enter this 
+portal and begin the next chapter of your life." 
+The old man sees the shock on your face and smiles a comforting smile, "I am but a fragile old man, and 
+cannot accompany you through this cave, but what I can provide are a few simple spells that will help you 
+along your way. Just read my old manuscripts and tryout those spells." 
+>less OldManuscipts
+There is no OldManuscipts here.
+>less OldManuscripts
+If you ever forget a spell just use"help" and a list of available spells will appear. If you need details on 
+how to use a specific spell, use 'man' followed by spell command. For example, if you were interested in 
+details on how to use the "mv" spell you would use: man mv 
+>ls
+ Locations: 
+Cave
+ Items: 
+OldMan
+OldManuscripts
+>cd Cave
+You have moved to Cave. It's your typical cave: dark and dank.
+>ls
+ Locations: 
+DarkCorridor
+Staircase
+>cd DarkCorridor
+You have moved to DarkCorridor. You travel through the dark corridor and find a small dank room at the end.
+>ls
+ Locations: 
+DankRoom
+>cd DankRoom
+You have moved to DankRoom. It's a musty dank room. A round boulder sits to the right side of the room.
+>ls
+ Locations: 
+SmallHole
+ Items: 
+Boulder
+>less Boulder
+You feel a slight breeze coming from behind the boulder. Maybe move it out of your way?
+>cd SmallHole
+You have moved to SmallHole. There's nothing exciting in the small hole, and it's pretty dirty. There's no 
+real reason to go into the hole. 
+There's nothing exciting in the small hole, and it's pretty dirty. I suggest going back out.
+>ls
+ Locations: 
+>cd ..
+You have moved to DankRoom. It's a musty dank room. A round boulder sits to the right side of the room.
+>ls
+ Locations: 
+SmallHole
+ Items: 
+Boulder
+>cd ..
+You have moved to DarkCorridor. You travel through the dark corridor and find a small dank room at the end.
+>ls
+ Locations: 
+DankRoom
+>cd ..
+You have moved to Cave. It's your typical cave: dark and dank.
+>ls
+ Locations: 
+DarkCorridor
+Staircase
+>cd Staircase
+You have moved to Staircase. The rocky staircase leads you to a dead end and a sign indicating such.
+>ls
+ Locations: 
+
+ Items: 
+Sign
+>less Sign
+DEAD END
+>cd ..
+You have moved to Cave. It's your typical cave: dark and dank.
+>cd ..
+You have moved to EasternMountains. You travel through a mountain path, which eventually leads you to the 
+entrance of a cave. Sitting right outside this cave is an old man. 
+>ls
+ Locations: 
+Cave
+ Items: 
+OldMan
+OldManuscripts
+>cd ..
+You have moved to NorthernMeadow. This is a beautiful green meadow. A plump but majestic pony prances happily 
+about. 
+>ls
+ Locations: 
+EasternMountains
+ Items: 
+Pony
+>cd ..
+You have moved to Home. You are in the comfort of your own home.
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd MIT
+You have moved to MIT. You have arrived by magic carpet to MIT!
+>ls
+ Locations: 
+StataCenter
+AthenaCluster
+ Items: 
+AdmissionLetter
+>less AdmissionLetter
+Congratulations on entering MIT! Here you will learn special spells that you can only use at MIT. Enjoy!
+>cd ..
+You have moved to Home. You are in the comfort of your own home.
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd MIT
+You have moved to MIT. You have arrived by magic carpet to MIT!
+>ls
+ Locations: 
+StataCenter
+AthenaCluster
+ Items: 
+AdmissionLetter
+>cd ..
+You have moved to Home. You are in the comfort of your own home.
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd MIT
+You have moved to MIT. You have arrived by magic carpet to MIT!
+>ls
+ Locations: 
+StataCenter
+AthenaCluster
+ Items: 
+AdmissionLetter
+>less AdmissionLetter
+Congratulations on entering MIT! Here you will learn special spells that you can only use at MIT. Enjoy!
+>cd ..
+You have moved to Home. You are in the comfort of your own home.
+>cd StataCenter
+There is no room called StataCenter.
+>cd StataCenter
+There is no room called StataCenter.
+>sl
+Command 'sl' not found in room 'Home'
+>ls
+ Locations: 
+WesternForest
+NorthernMeadow
+MIT
+ Items: 
+WelcomeLetter
+>cd MIT
+You have moved to MIT. You have arrived by magic carpet to MIT!
+>ls
+ Locations: 
+StataCenter
+AthenaCluster
+ Items: 
+AdmissionLetter
+>ls
+ Locations: 
+StataCenter
+AthenaCluster
+ Items: 
+AdmissionLetter
+>cd StataCenter
+You have moved to StataCenter. The center of computer science and artificial intelligence research at MIT. 
+Lots of magic happens here, including TAs, grad students, etc. 
+>ls
+ Locations: 
+
+ Items: 
+WaryEyeOfGradStudent
+HelpfulTA
+>less WaryEyeOfGradStudent
+If you so desire, you can add a new MagicLocker outside your Home. In this MagicLocker you can find some 
+tools that will be useful in your time at MIT (and beyond). There you can find portals to other places, you 
+can write notes, and you can store various items you collect in your travels in the MagicLocker. But first 
+you need to go to the AthenaCluster and learn how. 
+>less HelpfulTA
+Ah, welcome to the wonderful land of Stata. There's one room here that you'll need the combination for. All 
+you have to do is ask: 
+ 'tellme combo'.
+>ls
+ Locations: 
+
+ Items: 
+WaryEyeOfGradStudent
+HelpfulTA
+>ls
+ Locations: 
+
+ Items: 
+WaryEyeOfGradStudent
+HelpfulTA
+>cd ..
+You have moved to MIT. You have arrived by magic carpet to MIT!
+>ls
+ Locations: 
+StataCenter
+AthenaCluster
+ Items: 
+AdmissionLetter
+>cd AthenaCluster
+None shall pass without the combination. Youhave one chance to enter the combination. Enter password:
+>ls
+ Locations: 
+StataCenter
+AthenaCluster
+ Items: 
+AdmissionLetter
+>cd AthenaCluster
+None shall pass without the combination. Youhave one chance to enter the combination. Enter password:
+>terminus
+You have correctly entered the cluster combo. Entering the AthenaCluster.
+>ls
+ Locations: 
+
+ Items: 
+Workstation
+>less Workstation
+The Workstation has resources you can use to access files in a joint Athena locker. It adds new rooms (when 
+they're in your Home we call them lockers) to your Home, and you can add them to your collection of lockers 
+if you have permission. If you know what you want to add to your Home (the name of the locker you want, of 
+course), just 'add LOCKERNAME'. It gives you extra spells (if you learn them), and gives you more Rooms to 
+explore. 
+>ls
+ Locations: 
+
+ Items: 
+Workstation
+>cd ..
+You have moved to MIT. You have arrived by magic carpet to MIT!
+>ls
+ Locations: 
+StataCenter
+AthenaCluster
+ Items: 
+AdmissionLetter

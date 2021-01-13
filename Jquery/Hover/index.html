@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    var content="";
+    
+
+    for(var i=0;i<=3;i++)
+
+    {
+content+="<img src='spiderman.png' data-alt-src='ninja.png'> ";
+
+    }
+
+    
+ 
+        $(document).ready(function(){
+            
+            $(".container").html(content);
+            
+            $("img").attr("height", "100%")
+
+            $("img").attr("width", "20%")
+
+            $("img").hover(function(){
+               var temp=$(this).attr("src");
+
+               $(this).attr("src",$(this).attr("data-alt-src"));
+               $(this).attr("data-alt-src",temp) 
+
+            });
+
+    
+       
+
+
+        });
+        
+        </script>
+    
+</head>
+
+
+<body>
+
+    <div class="container">
+
+    </div>
+
+   
+</body>
+
+
+</html>

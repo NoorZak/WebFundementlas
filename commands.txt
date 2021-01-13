@@ -1,0 +1,70 @@
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop
+$ cd
+
+user@DESKTOP-C00MCJ9 MINGW64 ~
+$ cd desktop
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop
+$ mkdir test
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop
+$ cd test
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/test
+$ touch index.html
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/test
+$ touch styles.css
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/test
+$ touch commands.txt
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/test
+$ cp index.html index_2.html
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/test
+$ cd ..
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop
+$ mkdir destination
+
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop
+$ cd destination
+
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/destination
+$ mv ~/desktop/test/index_2.html ~/desktop/destination/index_2.html
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/destination
+$ cd ..
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop
+$ cd test
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/test
+$ rm styles.css
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/test
+$ ls
+commands.txt  index.html
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/test
+$ cd ..
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop
+$ cd destination
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/destination
+$ ls
+index_2.html
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop/destination
+$ cd ..
+
+
+
+user@DESKTOP-C00MCJ9 MINGW64 ~/desktop
+$ rm -r destination
+

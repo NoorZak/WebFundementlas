@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Ninja Man</title>
+<style type="text/css">
+.row{
+line-height: 0;
+}
+
+
+.wall{
+
+background-color: blue;
+height: 40px;
+
+width:40px ;
+display: inline-block;
+
+
+
+}
+
+.blank{
+background-color: black;
+height: 40px;
+
+width:40px ;
+display: inline-block;
+
+
+
+}
+
+#scaredy
+{
+background-color: black;
+height: 40px;
+
+width:40px ;
+display: inline-block;
+background-image: url('scaredy.png');
+
+background-size: contain;
+
+position: absolute;
+left : 280px;
+
+top : 280px;
+
+
+}
+
+
+.sushi{
+background-color: black;
+height: 40px;
+
+width:40px ;
+display: inline-block;
+background-image: url('sushi.png');
+background-size: contain;
+
+}
+.onigiri{
+background-color: black;
+height: 40px;
+
+width:40px ;
+display: inline-block;
+background-image: url('onigiri.png');
+background-size: contain;
+
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+#ninjaman
+{
+background-color: black;
+height: 40px;
+
+width:40px ;
+display: inline-block;
+background-image: url('ninja.gif');
+
+background-size: contain;
+
+position: absolute;
+left : 40px;
+
+top : 40px;
+
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<div id="world">   
+    
+</div> 
+
+
+<div id='ninjaman'>   
+    
+
+</div> 
+
+<div id='scaredy'>   
+    
+
+</div> 
+                
+
+</body>
+
+
+
+<script type="text/javascript">
+var row=8;
+var col =8;
+var world = [];
+for (var i = 0; i < row; i++) {
+    world[i] = [];
+    for (var j = 0; j < col; j++) {
+          world[i][j] = 0;
+    
+      //  world[i][j] =  Math.floor(Math.random() * 4);
+    }
+    
+}
+    
+
+console.log(world);
+   
+var sushiCount = 0;
+var points=0;
+var worldDict ={
+0:"blank",
+1:"wall",
+2:"sushi",
+3:"onigiri",
+}
+
+
+function drawWorld(){
+var output ="";
+for(var row=0;row<world.length;row++)
+    {output+="<div class='row'>"
+    for(var i=0;i<world[row].length;i++)
+    {output+="<div class='"+worldDict[world[row][i]]+"'></div>";
+    }
+
+    output+="</div>";
+
+
+    
+    
+    }
+
+
+
+    document.getElementById('world').innerHTML = output;
+
+
+
+
+}
+
+
+drawWorld();
+
+
+
+var ninjaman =
+{
+x:1,
+y:1,
+dead :0,
+
+
+};
+
+
+
+var scaredy =
+{
+x:7,
+y:7,
+
+
+};
+
+function deleteNinjaman(){
+
+ninjaman.x =1;
+ninjaman.y =1;
+scaredy.x=7;
+scaredy.y=7;
+
+drawNinjaman();
+drawScaredy();
+
+
+}
+
+
+function drawScaredy(){
+
+document.getElementById("scaredy").style.top = scaredy.y*40 +"px";
+document.getElementById("scaredy").style.left = scaredy.x*40 +"px";
+
+}
+
+
+
+function updateScaredy(){
+
+if (ninjaman.x ==scaredy.x && ninjaman.y==scaredy.y)
+deleteNinjaman();
+
+else 
+
+{
+    
+if(Math.abs(ninjaman.x - scaredy.x) >Math.abs(ninjaman.y - scaredy.y))
+{if (ninjaman.x>scaredy.x ) 
+{scaredy.x++;
+drawScaredy();
+
+}
+
+if (ninjaman.x<scaredy.x) 
+
+{scaredy.x--;
+drawScaredy();
+}
+
+}
+
+else 
+if(Math.abs(ninjaman.x - scaredy.x) <=Math.abs(ninjaman.y - scaredy.y))
+{if (ninjaman.y>scaredy.y ) 
+{scaredy.y++;
+drawScaredy();
+
+}
+
+if (ninjaman.y<scaredy.y) 
+
+{scaredy.y--;
+drawScaredy();
+}
+
+}
+
+
+
+
+
+
+}
+
+
+}
+
+
+
+updateScaredy();
+function drawNinjaman(){
+
+
+document.getElementById("ninjaman").style.top = ninjaman.y*40 +"px";
+
+
+document.getElementById("ninjaman").style.left = ninjaman.x*40 +"px";
+
+}
+
+
+
+drawScaredy();
+
+
+document.onkeydown = function(e){
+console.log(e.keyCode);
+
+if(e.keyCode ==17 )
+updateScaredy();
+
+
+
+if(e.keyCode ==37 )
+if (world[ninjaman.y][ninjaman.x-1] != 1)
+ninjaman.x--;
+
+
+if(e.keyCode ==39)
+if (world[ninjaman.y][ninjaman.x+1] != 1)
+
+ninjaman.x++;
+
+if(e.keyCode ==38)
+if (world[ninjaman.y-1][ninjaman.x] != 1)
+
+ninjaman.y--;
+
+if(e.keyCode ==40)
+if (world[ninjaman.y+1][ninjaman.x] != 1)
+
+ninjaman.y++;
+
+
+
+if(world[ninjaman.y][ninjaman.x]==2){
+sushiCount++;
+points+=10;
+world[ninjaman.y][ninjaman.x]=0;
+}
+
+else if(world[ninjaman.y][ninjaman.x]==3){
+points+=5;
+world[ninjaman.y][ninjaman.x]=0;
+
+}
+
+console.log("Score is Equal to "+points);
+console.log("Sushi Count is Equal to  "+sushiCount);
+
+
+
+
+drawNinjaman();
+drawWorld();
+
+
+}
+
+
+</script>
+
+
+</html>

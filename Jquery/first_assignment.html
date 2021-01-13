@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#p1").hide();
+  });
+  $("#show").click(function(){
+    $("#p1").show();
+  });
+
+  $("#toggle").click(function(){
+    $("#p1").toggle();
+  });
+ 
+  $("#slideup").click(function(){
+    $("#p1").slideUp();
+  });
+ 
+   $("#slidedown").click(function(){
+    $("#p1").slideDown();
+  });
+ 
+
+   $("#slidetoggle").click(function(){
+    $("#p1").slideToggle();
+  });
+  
+   $("#slidetoggle").click(function(){
+    $("#p1").slideToggle();
+  });
+  
+  $("#slidetoggle").click(function(){
+    $("#p1").slideToggle();
+  });
+  
+  
+  
+  $("#fadeout").click(function(){
+    $("#p1").fadeOut();
+  });
+  
+  
+  $("#fadein").click(function(){
+    $("#p1").fadeIn();
+  });
+  
+  
+  $("#addclass").click(function(){
+   $("#p1").addClass('blue');
+   });
+  
+  
+  $('#before').click(function(){
+   $("#p1").before('<p>Hi Every one</p>');
+   });
+  
+
+  $('#after').click(function(){
+   $("#p1").after('<p>Hi Every one</p>');
+   });
+
+
+  $('#append').click(function(){
+   $("#p1").append("Text Appended");
+   });
+   
+   
+   
+  $("#changecontent").click(function(){
+    $("#p1").html("Hello <b>world!</b>");
+  });
+   
+   
+   
+  $("#border").click(function(){
+    $("#p1").attr("style", "color:red");
+  });
+
+
+
+  $("#val").click(function(){
+    
+      $("input:text").val("Haha");
+
+    
+    });
+
+
+
+
+
+
+
+$("#text").click(function(){
+    $("#p1").text("Text Changed");
+});
+
+
+
+});
+</script>
+
+
+<style>
+.blue{
+
+background-color:blue;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<p id="p1">If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="toggle">Toggle</button>
+
+<button id="slideup">slide up</button>
+
+<button id="slidedown">slide down</button>
+
+<button id="slidetoggle">slide toggle</button>
+<button id="fadeout">Fade Out</button>
+
+<button id="fadein">Fade In</button>
+<button id="addclass">Add Class</button>
+<button id="before">before</button>
+<button id="after">after</button>
+
+<button id="append">append</button>
+
+
+<button id="changecontent">Change Conetent</button>
+
+<button id="border">Change Color (Attr) </button>
+
+
+<input type="text" name="user" value : "" >
+
+<button id="val">Val</button>
+
+
+<button id="text">Text Change </button>
+
+
+</body>
+</html>

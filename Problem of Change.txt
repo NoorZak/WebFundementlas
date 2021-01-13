@@ -1,0 +1,83 @@
+
+
+  var dict = { 100:0,50:0,20:0,10:0,5:0,2:0,1:0};
+ 
+function sup(paid ,cost){
+   
+  
+  var change ;
+  var r;
+  change = paid - cost ;
+    
+  if (change >= 100){
+    
+  c(100);  
+      
+    }
+  if (change >= 50){
+    
+  c(50);  
+      
+    }
+  
+  if (change >= 20){
+    
+  c(20);  
+      
+    }
+  
+  
+  if (change >= 10){
+    
+  c(10);  
+      
+    }
+  
+  
+  if (change >= 5){
+    
+  c(5);  
+      
+    }
+  
+  
+  
+  if (change >= 2){
+    
+  c(2);  
+      
+    }
+  
+  if (change >= 1){
+    
+  c(1);  
+      
+    }
+  
+  function c(nis){
+    r = Math.floor(change / nis);
+    dict[nis]=r;  
+
+    change = change - nis*r;
+    
+  
+}
+
+return dict;
+  
+  
+  
+}
+
+
+var paid = prompt("Please enter Money");
+
+var cost = prompt("please enter Cost");
+sup(paid,cost);
+for (let k in dict) {
+    console.log(k + ' > ' + dictionary[k])
+}
+
+
+
+

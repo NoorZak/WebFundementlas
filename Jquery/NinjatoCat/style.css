@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+.container{
+    
+    background-color: #245076;
+    width: 1349px;
+    height: 754px;
+}
+
+
+img{
+
+display: block;
+
+
+}

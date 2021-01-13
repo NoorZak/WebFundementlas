@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    var content="";
+    
+var button ="</container><div><input type='submit' value='Reset'></div>"
+    for(var i=0;i<8;i++)
+
+    {
+
+content+="<img src='ninja.png' alt='Hello' width='25%'>";
+
+    }
+
+    content+=button;
+
+
+        $(document).ready(function(){
+           
+            $(".container").html(content);
+            $("img").click(function(){
+                $(this).hide();
+            });
+
+            $("input:submit").click(function(){
+                    $("img").show();
+        });
+           
+
+    
+       
+
+
+        });
+        
+        </script>
+    
+</head>
+
+
+<body>
+
+    <div class="container">
+
+    </div>
+
+   
+</body>
+
+
+</html>

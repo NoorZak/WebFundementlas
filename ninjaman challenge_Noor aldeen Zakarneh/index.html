@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Ninja Man</title>
+<style type="text/css">
+.row{
+line-height: 0;
+}
+
+
+.wall{
+
+background-color: blue;
+height: 40px;
+width:40px ;
+display: inline-block;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+#ninjaman
+{
+background-color: black;
+height: 40px;
+
+width:40px ;
+display: inline-block;
+background-image: url('ninja.gif');
+
+background-size: contain;
+
+position: absolute;
+left : 40px;
+
+top : 40px;
+
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+    
+<div id="world">   
+    
+</div> 
+
+
+                
+
+
+
+
+<script type="text/javascript">
+var row=13;
+var col =13;
+var world = [];
+var sushiCount = 0;
+
+function randomize(){
+
+    for (var i = 0; i < row; i++) {
+    world[i] = [];
+    for (var j = 0; j < col; j++) {
+     world[i][j] =  0;
+
+        
+    }
+
+}   
+}
+
+
+function drawWorld(){
+
+var output ="";
+for(var row=0;row<world.length;row++)
+    {output+="<div class='row'>"
+    for(var i=0;i<world[row].length;i++)
+    {output+="<div class='"+worldDict[world[row][i]]+"'></div>";
+    }
+
+    output+="</div>";
+
+
+    
+    
+    }
+
+
+
+    document.getElementById('world').innerHTML = output;
+
+
+
+
+}
+
+drawWorld();
+
+
+
+</script>
+
+
+</html>

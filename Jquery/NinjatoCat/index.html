@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    var content="";
+    var flag = false;
+    
+var button ="</container><div><input type='submit' value='Reset'></div>"
+
+    for(var i=0;i<=4;i++)
+
+    {
+if(i<2)
+content+="<img src='img/cat"+i+".png' data-alt-src='img/ninja"+i+".png'  width='25%'> ";
+
+else 
+content+="<img src='img/ninja"+i+".png'  data-alt-src='img/cat"+i+".png' width='25%'> ";
+
+    }
+
+    
+
+        $(document).ready(function(){
+            
+            $(".container").html(content);
+            
+
+            $("img").click(function(){
+               var temp=$(this).attr("src");
+               
+               $(this).attr("src",$(this).attr("data-alt-src"));
+               $(this).attr("data-alt-src",temp) 
+
+            });
+
+    
+       
+
+
+        });
+        
+        </script>
+    
+</head>
+
+
+<body>
+
+    <div class="container">
+
+    </div>
+
+   
+</body>
+
+
+</html>
